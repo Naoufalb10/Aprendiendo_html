@@ -3,11 +3,11 @@ scroll-behavior: smooth
 }
 html{
   width: 100%;
-  
 }
 
 body {
     background:linear-gradient(-45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    font-size: 20px
 }
 @keyframes gradient {
     0% {
@@ -31,13 +31,8 @@ a:hover {
   color: black;
 }
 
-.previous {
-  background-color: #f1f1f1;
-  color: black;
-}
-
 .next {
-  background-color: #4CAF50;
+  background:linear-gradient(-45deg, #00F260, #0575E6);
   color: white;
 }
 
@@ -53,7 +48,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: linear-gradient(-45deg, #360033, #0b8793);
-  outline: 1px solid slategrey;
+  background: linear-gradient(-45deg, #4776E6, #8E54E9);
+  outline: 1px solid  #333;
+  border-radius: 10px
   animation: gradient 15s ease infinite;
 }
