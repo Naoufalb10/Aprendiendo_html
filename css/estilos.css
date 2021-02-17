@@ -52,4 +52,5 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid  #333;
   border-radius: 10px
   animation: gradient 15s ease infinite;
+  
 }
