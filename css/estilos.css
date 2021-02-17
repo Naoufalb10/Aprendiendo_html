@@ -1,0 +1,59 @@
+html {
+scroll-behavior: smooth
+}
+html{
+  width: 100%;
+  
+}
+
+body {
+    background:linear-gradient(-45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.round {
+  border-radius: 50%;
+}
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px (360033);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(-45deg, #360033, #0b8793);
+  outline: 1px solid slategrey;
+  animation: gradient 15s ease infinite;
+}
