@@ -1,159 +1,73 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
-body{
-  font-family:'Roboto';
-  background-color:#31037D;
-}
-*{
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html, body {
+  margin: 50px;
   padding: 0;
-}
-.center{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.center h1{
-  user-select: none;
-  font-size: 100px;
-  color: white;
-  background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0,255,0) 14.28%,
-              rgb(0,255,255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
-  background-size: 600vw 600vw;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  animation: slide 6s linear infinite forwards;
-}
-@keyframes slide {
-  0%{
-    background-position-x: 0%;
-  }
-  100%{
-    background-position-x: 600vw;
-  }
-}
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  font-family:'Roboto';
+  background-color:#3498db;
+
 }
 
 body {
-	width: 100%;
-	height: 90vh;
-}
-
-.button {
-	display: block;
-  width: 320px;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 0;
-  overflow: hidden;
-  position: relative;
-  transform: translatez(0);
-  text-decoration: none;
-  box-sizing: border-box;
-  font-size: 24px;
-	font-weight: normal;
-	box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-}
-
-.instagram {
-	text-align: center;
-	border-radius: 50px;
-  padding: 26px;
-  color: white;
-  background: #BD3381;
-  transition: all 0.2s ease-out 0s;
-}
-
-.gradient {
-	display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
   width: 100%;
   height: 100%;
-  bottom: auto;
-  margin: auto;
-  z-index: -1;
-  background: radial-gradient(90px circle at top center, rgba(238,88,63,.8) 30%, rgba(255,255,255,0));
-  transition: all 0s ease-out 0s;
-	transform: translatex(-140px);
-	animation: 18s linear 0s infinite move;
+  font-family: sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
-
-@keyframes move {
-	0% {
-		transform: translatex(-140px);
-	}
-	25% {
-		transform: translatex(140px);
-		opacity: 0.3;
-	}
-	50% {
-		transform: translatex(140px);
-		opacity: 1;
-		background: radial-gradient(90px circle at bottom center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
-	}
-	75% {
-		transform: translatex(-140px);
-		opacity: 0.3;
-	}
-	100% {
-		opacity: 1;
-		transform: translatex(-140px);
-		background: radial-gradient(90px circle at top center, rgba(238,88,63,.5) 30%, rgba(255,255,255,0));
-	}
-}
-
-.particle {
-	position: absolute;
- 	border-radius: 50%;
-}
-
-@for $i from 1 through 30 {
-	@keyframes particle-animation-#{$i} {
-		100% {
-			transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-		}
-	}
-
-	.particle:nth-child(#{$i}){
-		animation: particle-animation-#{$i} 60s infinite;
-		$size: random(5) + 5 + px;
-		opacity: random(100)/100;
-		height: $size;
-		width: $size;
-		animation-delay: -$i * .2s;
-		transform: translate3d((random(90) * 1vw), (random(90) * 1vh), (random(100) * 1px));
-		background: hsl(random(360), 70%, 50%);
-	}
-}
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  font-size: 80px;
-  border: 10px solid #f1f1f1;
-  position: fixed; /* Stay fixed */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 300px;
-  padding: 20px;
+.title {
   text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-top: 100px;
+  font-weight: 100;
 }
+
+.container {
+  width:100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.container .card {
+  width:330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow:  0 2px 2px rgba(0, 0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+.container .card:hover {
+  background-color:#e74c3c;
+  padding: 2rem;
+  transform:translateY(-15px);
+  box-shadow: 0 10px 10px rgba(70, 102, 255, 2.0);
+
+}
+.container .card img {
+  width:300px;
+  height: 220px;
+}
+.container .card img {
+  font-weight: 600;
+}
+
+.container .card p{
+  color: white;
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+.container .card a{
+  font-style: strong;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2ecc71;
+}
+
