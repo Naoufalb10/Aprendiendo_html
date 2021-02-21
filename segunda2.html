@@ -2,39 +2,80 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>PÁGINA DE INICIO</title>
-    <link rel="stylesheet" href="css/estilos2.css"/>
+    <title>ENLACES DE INTERÉS</title>
+    <link rel="stylesheet" href="css/estilos2.css">
     <meta name="viewport" content=width=device-width, user-scalable=no,
-  initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
-  </head>
-  <body>
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0>
+  <style>
+  #menu{
+  			background-color: #1a8fe3;
+  		}
+
+  		#menu ul{
+  			list-style: none;
+  			margin: 0;
+  			padding: 0;
+  		}
+
+  		#menu ul li{
+  			display: inline-block;
+  		}
+
+  		#menu ul li a{
+  			color: white;
+  			display: block;
+  			padding: 20px 20px;
+  			text-decoration: none;
+  		}
+
+  		#menu ul li a:hover{
+  			background-color: #42B881;
+  		}
+
+  		.item-r{
+  			float: right;
+  		}
+      </style>
+</head>
+<body>
+  <div id="menu">
+  		<ul>
+  			<li><a href="index.html">Home</a></li>
+  			<li><a href="https://educaciodigital.cat/insbarresiones/moodle/">Acerca</a></li>
+  			<li><a href="https://es.wikipedia.org/wiki/Servicio">Servicios</a></li>
+  			<li class="item-r"><a href="https://dle.rae.es/contacto">Contacto</a></li>
+  		</ul>
+    </div>
+    <center><h1>ENLACES DE INTERÉS</h1></center>
     <div class="container">
       <br>
       <br>
       <br>
           <div class="card">
          <img src="img/card1.jpg">
-         <h1></h1>
+         <h4>CiberSeguridad</h4>
+         <p>La seguridad informática, también conocida como ciberseguridad o seguridad de tecnología de la información,​ es el área relacionada con la informática y la telemática que se enfoca en la protección.</p>
 
-         <h4>Computing</h4>
-         <p>Este espacio cuadriculado, está diseñado perfectamente para soportar hasta 1430 carácteres. Así que, puede escribir letras y letras.</p>
-
-           <a href="#">Leer Más</a>
+           <a href="https://es.wikipedia.org/wiki/Seguridad_informática#:~:text=La%20seguridad%20informática%2C%20también%20conocida,la%20información%20contenida%20en%20una">Leer Más</a>
        </div>
-
     <div class="card">
       <img src="img/card2.jpg">
       <h4>MODDING</h4>
-      <p> Este espacio cuadriculado, está diseñado perfectamente para soportar hasta 1430 carácteres. Así que, puede escribir letras y letras.</p>
-         <a href="#">Leer Más</a>
+      <p>El modding, concepto derivado de la palabra inglesa modify, es el arte de modificar estética o funcionalmente partes de un ordenador, ya sea la caja, teclado o monitor.</p>
+         <a href="https://es.wikipedia.org/wiki/Modding">Leer Más</a>
        </div>
 
     <div class="card">
       <img src="img/card3.jpg">
-      <h4>PERSONALIZADO</h4>
-      <p>Este espacio cuadriculado, está diseñado perfectamente para soportar hasta 1430 carácteres. Así que, puede escribir letras y letras.</p>
-         <a href="#">Leer Más</a>
+      <h4>Bolsa de Valores</h4>
+      <p>La bolsa de valores es una organización pública o privada que brinda las facilidades necesarias para que sus miembros, atendiendo los mandatos de sus clientes, introduzcan órdenes y realicen negociaciones de compra.</p>
+         <a href="tercera3.html">Leer Más</a>
        </div>
-
+       <br>
+       <br>
+       <div>
+         <a href="index.html" class="previous">&laquo Anterior</a>
+            <a href="tercera3.html" class="next">&raquo Siguiente</a>
+       </div>
   </body>
 </html>

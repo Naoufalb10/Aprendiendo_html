@@ -1,25 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@1,500&family=RocknRoll+One&display=swap');
 html, body {
-  margin: 50px;
+  margin: 0;
   padding: 0;
-  font-family:'Roboto';
-  background-color:#3498db;
-
+  font-family:'Montserrat';
+  background-color: #9146ff;
+}
+h1 {
+  font-size: 110pt;
+  font-family: 'Luckiest Guy';
+  color: #E6E8E6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
 }
 
-body {
-  width: 100%;
-  height: 100%;
-  font-family: sans-serif;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-}
 .title {
   text-align: center;
   font-size: 40px;
-  color: white;
-  margin-top: 100px;
+  margin-top: 10px;
   font-weight: 100;
 }
 
@@ -36,37 +55,73 @@ body {
 .container .card {
   width:330px;
   height: 430px;
-  border-radius: 8px;
-  box-shadow:  0 2px 2px rgba(0, 0, 0, 0, 0.2);
+  border-radius: 15px;
+  box-shadow:  0 10px 10px rgba(0, 0, 0, 1);
   overflow: hidden;
   margin: 20px;
   text-align: center;
   transition: all 0.25s;
 }
 .container .card:hover {
-  background-color:#e74c3c;
+  background-color:#fffffc;
   padding: 2rem;
   transform:translateY(-15px);
-  box-shadow: 0 10px 10px rgba(70, 102, 255, 2.0);
-
+  box-shadow: 0 10px 5px rgba(108, 92, 231, 10)
 }
 .container .card img {
+  border-radius:2%;
   width:300px;
   height: 220px;
 }
 .container .card img {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .container .card p{
-  color: white;
-  padding: 0 1rem;
+  color:black;
+  font-style: bold;
+  padding: 0 0.1rem;
   font-size: 16px;
   font-weight: 300;
 }
 .container .card a{
-  font-style: strong;
+  font-style: bold;
   font-weight: 500;
   text-decoration: none;
-  color: #2ecc71;
+  color:#6c5ce7;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border-bottom: 10px
+}
+
+a:hover {
+  background: linear-gradient(-45deg, #4776E6, #8E54E9);
+  color:white;
+  border-radius: 8px;
+}
+
+.previous {
+  color: white;
+}
+.next {
+  color: white;
+}
+body::-webkit-scrollbar {
+  width: 0.7em;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px (360033);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(-45deg, #4776E6, #8E54E9);
+  outline: 1px solid  #333;
+  border-radius: 10px
+  animation: gradient 15s ease infinite;
+
 }
